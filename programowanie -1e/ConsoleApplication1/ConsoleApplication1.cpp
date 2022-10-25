@@ -1,20 +1,44 @@
-﻿// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+﻿// FirstProject.cpp : This file contains the 'main' function.
+//  Program execution begins and ends there.
+
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
-}   std::cout << "Hello World!"
+    /*
+    Instrukcja do wyświetlania informacji na standardowy strumień wyjścia.
+    Domyślnie, jesli nie zostało to zmienione, jest to konsola w której aplikacja
+    została uruchomiona.
+    Aby wyswietlić na konsoli nalezy użyć std::cout.
+    Na konosle wywyłamy za pomoca operatora <<.
+    Po nim musi znajdować się dana do wysłania.
+    Instrukcję kończymy znakiem średnik.
+    "Hello World!\n" - jest to stała o wartości tekstowej.
+    Stałe tekstowe są ograniczone znakami cudzysłowu.
+    * ' (apostrof) - jesli jest jeden znak
+    * " (cudzysłów) - jesli jest zero lub więcej znaków
+    W stałych tekstowych moga być wstawiane znaki specjalne. Takie znaki
+    zaczynają się od znaku \ (backslash) po którym może się znajdować:
+    * jedna litera alfabetu angielskiego
+    * trzy cyfry dające liczbę ósemkową
+    Przykładowo:
+    * \n - symbol oznaczający nową linię.
+    * \t - symbol oznaczający znak tabulatora
+    * \\ - symbol oznaczający znak \
+    * \' - symbol oznaczający znak '
+    * \" - symbol oznaczający znak "
+    * \141 - symbol ósemkowy oznaczajacy zgodnie z tablicą kodów ASCII znak młaej literki a
+    */
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+    //github.com/IronLittleFox
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+
+    std::cout << "/n";
+    std::cout << "podaj liczbe";
+    std::cout << "Podaj Liczbe";
+        int numberFromUsers;
+        std::cin >> numberFromUsers;
+        std::cout << "podano:" << numberFromUsers << "\n";
+}
+
